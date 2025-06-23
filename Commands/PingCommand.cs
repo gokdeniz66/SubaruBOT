@@ -6,7 +6,7 @@ namespace SubaruBOT.Commands
     {
         public async Task ExecuteAsync(SocketMessage message)
         {
-            await message.Channel.SendMessageAsync("Pong!!");
+            await message.Channel.SendMessageAsync("Pong!");
         }
     }
 }

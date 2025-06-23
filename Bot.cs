@@ -57,6 +57,12 @@ namespace SubaruBOT
                 var command = new PingCommand();
                 await command.ExecuteAsync(message);
             }
+
+            if (message.Content.StartsWith("!character"))
+            {
+                var command = new CharacterCommand();
+                await command.ExecuteAsync(message);
+            }
         }
     }
 }
