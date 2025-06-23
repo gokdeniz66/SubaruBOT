@@ -1,2 +1,2 @@
 # SubaruBOT
-Re:Zero Discord bot in C# .NET
+Re:Zero themed Discord bot
