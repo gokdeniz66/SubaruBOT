@@ -63,6 +63,19 @@ namespace SubaruBOT
                 var command = new CharacterCommand();
                 await command.ExecuteAsync(message);
             }
+
+            if (message.Content.StartsWith("!search"))
+            {
+                var parts = message.Content.Split(' ', 2, StringSplitOptions.RemoveEmptyEntries);
+                if (parts.Length < 2)
+                {
+                    await message.Channel.SendMessageAsync("Use: !search <myanimelist-username>");
+                    return;
+                }
+                var username = parts[1].Trim();
+                var command = new MalProfileCommand();
+                await command.ExecuteAsync(message, username);
+            }
         }
     }
 }

@@ -32,7 +32,8 @@ namespace SubaruBOT.Commands
 
             var embed = new EmbedBuilder()
                 .WithTitle(character.Character.Name)
-                .WithDescription($"**Rol:** {character.Role}")
+                .WithUrl($"https://myanimelist.net/character/{character.Character.MalId}")
+                .WithDescription($"**Role:** {character.Role}")
                 .WithImageUrl(character.Character.Images?.JPG?.ImageUrl ?? "")
                 .WithColor(Color.Blue)
                 .Build();
