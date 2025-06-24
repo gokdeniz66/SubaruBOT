@@ -41,7 +41,7 @@ namespace SubaruBOT.Commands
             }
             catch
             {
-                await message.Channel.SendMessageAsync($"Kon de statistieken niet ophalen voor gebruiker: {username}");
+                await message.Channel.SendMessageAsync($"Could not found the statics for the following user: {username}");
                 return;
             }
 
