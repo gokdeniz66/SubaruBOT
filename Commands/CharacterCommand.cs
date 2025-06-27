@@ -7,17 +7,18 @@ namespace SubaruBOT.Commands
     public class CharacterCommand
     {
         private readonly IJikan _jikan;
+        private readonly Random _random;
         private readonly int[] ReZeroIds = { 31240, 38414, 36286, 39587, 42203, 54857 };
 
         public CharacterCommand()
         {
             _jikan = new Jikan();
+            _random = new Random();
         }
 
         public async Task ExecuteAsync(SocketMessage message)
         {
-            var rand = new Random();
-            int selectedId = ReZeroIds[rand.Next(ReZeroIds.Length)];
+            int selectedId = ReZeroIds[_random.Next(ReZeroIds.Length)];
 
             var result = await _jikan.GetAnimeCharactersAsync(selectedId);
             var characters = result.Data;
@@ -28,7 +29,7 @@ namespace SubaruBOT.Commands
                 return;
             }
 
-            var character = characters.ElementAt(rand.Next(characters.Count));
+            var character = characters.ElementAt(_random.Next(characters.Count));
 
             var embed = new EmbedBuilder()
                 .WithTitle(character.Character.Name)

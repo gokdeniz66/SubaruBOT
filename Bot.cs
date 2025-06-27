@@ -76,6 +76,12 @@ namespace SubaruBOT
                 var command = new MalProfileCommand();
                 await command.ExecuteAsync(message, username);
             }
+
+            if (message.Content.StartsWith("!anime top"))
+            {
+                var command = new RandomTopAnimeCommand();
+                await command.ExecuteAsync(message);
+            }
         }
     }
 }

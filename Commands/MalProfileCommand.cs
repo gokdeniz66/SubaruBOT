@@ -53,8 +53,8 @@ namespace SubaruBOT.Commands
                 .AddField("Watching", $"{watching} anime(s)", inline: true)
                 .AddField("Completed", $"{amountEpisodesCompleted} episodes", inline: true)
                 .WithUrl($"https://myanimelist.net/profile/{user.Username}")
-                .WithImageUrl(user.Images.JPG.ImageUrl)
-                .WithFooter($"Location: {user.Location ?? "Kame House"}\nLast Online: {user.LastOnline:MMMM dd, yyyy}")
+                .WithImageUrl(user.Images.JPG.ImageUrl ?? "https://cdn.myanimelist.net/images/kaomoji_mal_white.png")
+                .WithFooter($"Location: {user.Location ?? "Kingdom of Lugunica"}\nLast Online: {user.LastOnline:MMMM dd, yyyy}")
                 .WithColor(Color.Purple)
                 .Build();
 
