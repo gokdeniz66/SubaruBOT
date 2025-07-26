@@ -1,6 +1,8 @@
 # SubaruBOT
 Re:Zero themed Discord bot with MyAnimeList integration and AI image generation
 
+Uses the [_Jikan.net_](https://github.com/Ervie/jikan.net) wrapper to fetch data from MyAnimeList
+
 ## Custom Display Bot Status
 Shows "Re:Zero" watching activity when online, giving the bot its themed personality.
 
