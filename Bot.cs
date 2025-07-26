@@ -41,7 +41,7 @@ namespace SubaruBOT
 
         private Task OnReadyAsync()
         {
-            var activity = new Game("Re:Zero Marathon", ActivityType.Watching);
+            var activity = new Game("Re:Zero", ActivityType.Watching);
             _client.SetActivityAsync(activity);
 
             Console.WriteLine("Bot is online as" + _client.CurrentUser);
