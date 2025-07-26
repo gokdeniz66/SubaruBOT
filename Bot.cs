@@ -85,6 +85,12 @@ namespace SubaruBOT
                 var command = new RandomTopAnimeCommand();
                 await command.ExecuteAsync(message);
             }
+
+            if (message.Content.StartsWith("!imagine"))
+            {
+                var command = new ImagineCommand();
+                await command.ExecuteAsync(message);
+            }
         }
     }
 }
