@@ -91,6 +91,12 @@ namespace SubaruBOT
                 var command = new ImagineCommand();
                 await command.ExecuteAsync(message);
             }
+
+            if (message.Content.StartsWith("!gacha"))
+            {
+                var command = new GachaCommand();
+                await command.ExecuteAsync(message);
+            }
         }
     }
 }
