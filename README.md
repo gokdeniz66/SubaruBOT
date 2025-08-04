@@ -28,3 +28,8 @@ Use `!search <username>` to display user profiles with stats, episodes watched, 
 
 <img width="439" height="61" alt="image" src="https://github.com/user-attachments/assets/8f5ade5c-0a04-44b9-84fc-c0bc5119348a" />
 <img width="1226" height="503" alt="image" src="https://github.com/user-attachments/assets/e4b17a5f-f71a-4fc5-8202-5739437af11b" />
+
+## Gacha game system with database
+`!gacha` user draws a random anime character saved under their Discord ID.
+
+<img width="295" height="495" alt="image" src="https://github.com/user-attachments/assets/9a55ab9c-87a4-4cd1-86f4-88f06a05e568" />
